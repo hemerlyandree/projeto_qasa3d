@@ -82,3 +82,49 @@ header {
 main {
   padding-top: 80px;
 }
+
+#vendas {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+}
+
+.vendas-conteudo {
+  max-width: 700px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.vendas-conteudo h1 {
+  font-family: var(--fonte-titulos);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.destaque {
+  color: var(--cor-dourado);
+}
+
+.vendas-conteudo p {
+  font-size: 1.2rem;
+  color: rgba(245, 240, 232, 0.70);
+  margin-bottom: 36px;
+}
+
+.btn-vendas {
+  background-color: var(--cor-dourado);
+  color: var(--cor-escuro);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.btn-vendas:hover {
+  opacity: 0.85;
+}

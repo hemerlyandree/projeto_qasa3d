@@ -23,8 +23,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: rgb(red, green, blue), 13, 10, 0.9;
-  border-bottom: 1px solid rgba(201, 168, 76, 0.2)
+  background-color: rgba(15, 13, 10, 0.9);
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2);
 }
 
 .navbar {
@@ -58,13 +58,18 @@ header {
 }
 
 .btn-cta {
-  background-color: #C9A84C;
-  text-decoration: #0f0d0a;
-  padding: 10px;
-  border-radius: 0%;
+  background-color: var(--cor-dourado);
+  color: var(--cor-escuro);
+  text-decoration: none;
+  padding: 10px 22px;
+  border-radius: 6px;
   font-weight: bold;
+  transition: opacity 0.3s;
 }
 
+.btn-cta:hover {
+  opacity: 0.85;
+}
 .menu-toggle {
   display: none;
 }

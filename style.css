@@ -23,8 +23,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 100;
-  background-color: 15, 13, 10, 0.9;
-  border-bottom: darkblue;
+  background-color: rgb(red, green, blue), 13, 10, 0.9;
+  border-bottom: 1px solid rgba(201, 168, 76, 0.2)
 }
 
 .navbar {
@@ -36,9 +36,23 @@ header {
   padding: 18px 32px;
 }
 
-.navlinks {
+.nav-links {
   text-decoration: none;
   color: var(--cor-texto);
   font-family: var(--fonte-links);
   transition: color 0.3s;
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-family: var(--fonte-links);
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--cor-dourado);
 }

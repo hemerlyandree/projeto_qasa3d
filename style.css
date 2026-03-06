@@ -87,7 +87,7 @@ main {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 0 32px;
+  padding-top: 80px 32px 0 32px;
 }
 
 .vendas-conteudo {
@@ -183,3 +183,4 @@ main {
   font-size: 0.95rem;
   line-height: 1.6;
 }
+

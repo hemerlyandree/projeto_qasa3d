@@ -128,3 +128,58 @@ main {
 .btn-vendas:hover {
   opacity: 0.85;
 }
+
+#como-funciona {
+  padding: 100px 32px;
+}
+
+.como-conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.como-conteudo h2 {
+  font-family: var(--fonte-titulos);
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.passos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.passo {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  padding: 40px 32px;
+}
+
+.passo-numero {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--cor-dourado);
+  color: var(--cor-escuro);
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.passo h3 {
+  font-family: var(--fonte-titulos);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.passo p {
+  color: rgba(245, 240, 232, 0.65);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

@@ -73,3 +73,12 @@ header {
 .menu-toggle {
   display: none;
 }
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+main {
+  padding-top: 80px;
+}

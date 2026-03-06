@@ -56,3 +56,15 @@ header {
 .nav-links a:hover {
   color: var(--cor-dourado);
 }
+
+.btn-cta {
+  background-color: #C9A84C;
+  text-decoration: #0f0d0a;
+  padding: 10px;
+  border-radius: 0%;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+}

@@ -1,0 +1,18 @@
+:root {
+  --cor-dourado: #C9A84C;
+  --cor-escuro: #0f0d0a;
+  --cor-texto: #F5F0E8;
+  --fonte-principal: 'Georgia', serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0d0a;
+  color: var(--cor-texto);
+  font-family: var(--fonte-principal);
+}

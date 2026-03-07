@@ -335,3 +335,42 @@ main {
   font-size: 0.9rem;
   color: rgba(245, 240, 232, 0.55);
 }
+
+#contato {
+  padding: 100px 32px;
+  background-color: rgba(201, 168, 76, 0.05);
+}
+
+.nossos-contato {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nossos-contato h2 {
+  margin-bottom: 32px;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.nossos-contato p {
+  color: rgba(245, 240, 232, 0.55);
+  margin-bottom: 32px;
+}
+
+.btn-contato {
+ background-color: var(--cor-dourado);
+  color: var(--cor-escuro);
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+  display: inline-block; 
+}
+
+.btn-contato:hover {
+  opacity: 0.85;
+}

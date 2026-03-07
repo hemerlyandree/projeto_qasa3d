@@ -374,3 +374,11 @@ main {
 .btn-contato:hover {
   opacity: 0.85;
 }
+
+footer {
+  border-top: 1px solid rgba(201, 168, 76, 0.2);
+  padding: 14px 32px;
+  text-align: center;
+  color: rgba(245, 240, 232, 0.4);
+  font-size: 0.9rem;
+}

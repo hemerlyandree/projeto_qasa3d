@@ -274,3 +274,64 @@ main {
 .btn-plano:hover {
   opacity: 0.85;
 }
+
+#depoimentos {
+  padding: 100px 32px;
+}
+
+.nossos-depoimentos {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nossos-depoimentos h2 {
+   margin-bottom: 32px;
+    font-family: var(--fonte-titulos);
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+}
+
+.cards-depoimentos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.card-depoimento {
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.estrelas {
+  color: #C9A84C;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.citacao {
+  font-style: italic;
+  color: #F5F0E8;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.autor {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.autor-nome {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.autor-empresa {
+  font-size: 0.9rem;
+  color: rgba(245, 240, 232, 0.55);
+}

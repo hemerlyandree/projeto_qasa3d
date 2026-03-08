@@ -382,3 +382,8 @@ footer {
   color: rgba(245, 240, 232, 0.4);
   font-size: 0.9rem;
 }
+
+header.scrolled {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  background-color:rgba(15, 13, 10, 0.98);
+}

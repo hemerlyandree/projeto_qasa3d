@@ -75,7 +75,7 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 70px;
   width: auto;
 }
 
@@ -88,12 +88,27 @@ main {
   display: flex;
   align-items: center;
   padding: 80px 32px 0 32px;
+  background-image: url(assets/marble.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#vendas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 0;
 }
 
 .vendas-conteudo {
   max-width: 860px;
   margin: 0px auto;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .vendas-conteudo h1 {

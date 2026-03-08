@@ -145,13 +145,30 @@ main {
 }
 
 #como-funciona {
+  background-image: url(assets/white-marble.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
   padding: 100px 32px;
+}
+
+#como-funciona::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .como-conteudo {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
+}
+#como-funciona .como-conteudo {
+  position: relative;
+  z-index: 1;
 }
 
 .como-conteudo h2 {
@@ -200,7 +217,25 @@ main {
 }
 
 #planos {
+  background-image: url('assets/marble-plano.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
   padding: 100px 32px;
+}
+
+#planos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+#planos .planos-conteudo {
+  position: relative;
+  z-index: 1;
 }
 
 .planos-conteudo {
@@ -291,7 +326,25 @@ main {
 }
 
 #depoimentos {
+  background-image: url(assets/white-marble.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
   padding: 100px 32px;
+}
+
+#depoimentos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 0;
+}
+
+#depoimentos .nossos-depoimentos{
+  position: relative;
+  z-index: 1;
 }
 
 .nossos-depoimentos {
@@ -396,7 +449,17 @@ footer {
   text-align: center;
   color: rgba(245, 240, 232, 0.4);
   font-size: 0.9rem;
+  background-image: url('assets/marble.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
 }
+
+footer::before{
+  position: relative;
+}
+
 
 header.scrolled {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);

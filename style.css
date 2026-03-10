@@ -82,10 +82,15 @@ header.escondido {
   letter-spacing: 2px;       
   text-transform: uppercase; 
   transition: opacity 0.3s;
+  transition: all 0.3s ease;
 }
 
 .btn-cta:hover {
-  opacity: 0.85;
+  opacity: 1;
+  background-color: #a8892e;
+  transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(201, 168, 76, 0.4);
+transition: all 0.3s ease;
 }
 .menu-toggle {
   display: none;
@@ -104,12 +109,15 @@ main {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 80px 32px 0 32px;
-  background-image: url(assets/marble-plano.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+  transition: background-image 1s ease;
+}
+
+#vendas.trasitando {
+  opacity: 0.7;
+  transition: opacity 0.5s ease;
 }
 
 #vendas::before {
@@ -118,6 +126,15 @@ main {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 0;
+}
+
+#vendas:hover::before {
+  background-color: rgba(0, 0, 0, 0.45);
+  transition: background-color 0.5s ease;
+}
+
+#vendas::before {
+  transition: background-color 0.5s ease;
 }
 
 .vendas-conteudo {
@@ -155,10 +172,16 @@ main {
   font-weight: bold;
   font-size: 1rem;
   transition: opacity 0.3s;
+  transition: all 0.3s ease;
+
 }
 
 .btn-vendas:hover {
-  opacity: 0.85;
+  opacity: 1;
+  background-color: #a8892e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
 }
 
 #como-funciona {
@@ -351,6 +374,7 @@ margin-bottom: 32px;
   border: 1px solid var(--cor-dourado);
   transition: opacity 0.3s;
   display: inline-block;
+  transition: all 0.3s ease;
 
 }
 
@@ -360,7 +384,12 @@ margin-bottom: 32px;
 }
 
 .btn-plano:hover {
-  opacity: 0.85;
+  opacity: 1;
+  background-color: var(--cor-dourado);
+  color: var(--cor-escuro);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
 }
 
 #depoimentos {
@@ -490,10 +519,15 @@ margin-bottom: 32px;
   font-size: 1rem;
   transition: opacity 0.3s;
   display: inline-block; 
+  transition: all 0.3s ease;
 }
 
 .btn-contato:hover {
-  opacity: 0.85;
+  opacity: 1;
+  background-color: #a8892e;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(201, 168, 76, 0.4);
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -556,7 +590,7 @@ footer p {
     display: block;
     width: 24px;
     height: 2px;
-    background-color: var(--cor-texto);
+    background-color: #1a1a1a;
     border-radius: 2px;
   }
 

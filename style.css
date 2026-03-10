@@ -603,13 +603,37 @@ footer p {
   .btn-cta {
     display: none;
   }
-  #como-funciona,
-  #planos,
-  #depoimentos,
-  #contato,
-  footer {
-    background-attachment: scroll;
-  }
+  
+.passos {
+  grid-template-columns: 1fr;
+}
+
+.cards-planos {
+  grid-template-columns: 1fr;
+}
+
+.cards-depoimentos {
+  grid-template-columns: 1fr;
+}
+
+.vendas-conteudo h1 {
+  font-size: 2.2rem;
+}
+
+.como-conteudo h2,
+.planos-conteudo h2,
+.nossos-depoimentos h2,
+.nossos-contato h2 {
+  font-size: 1.8rem;
+}
+
+#como-funciona,
+#planos,
+#depoimentos,
+#contato {
+  padding: 60px 20px;
+}
+
 }
 
 

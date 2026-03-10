@@ -18,6 +18,7 @@ body {
   background-color: var(--cor-escuro);
   color: var(--cor-texto);
   font-family: var(--fonte-texto);
+  overflow-x: hidden;
 }
 
 header {
@@ -567,11 +568,16 @@ footer p {
     top: 72px;
     left: 0px;
     width: 100%;
-    background-color: rgba(15, 13, 10, 0.98);
+    background-color: rgba(255, 255, 255, 0.98);
     padding: 24px 32px;
     gap: 20px;
-    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
+
+ .nav-links a {
+  color: #1a1a1a;
+ }
+  
   .nav-links.aberto {
     display: flex;
   }
@@ -596,6 +602,13 @@ footer p {
 
   .btn-cta {
     display: none;
+  }
+  #como-funciona,
+  #planos,
+  #depoimentos,
+  #contato,
+  footer {
+    background-attachment: scroll;
   }
 }
 

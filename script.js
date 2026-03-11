@@ -43,6 +43,7 @@ elements.forEach(function(el) {
   observer.observe(el)
 })
 
+// Slideshow - Hero
 const vendas = document.querySelector('#vendas')
 
 const wallpapers = [
@@ -84,4 +85,59 @@ vendas.style.backgroundImage = `url('${wallpapers[0]}')`
 vendas.style.backgroundSize = 'cover'
 vendas.style.backgroundPosition = 'center'
 
-setInterval(trocarWallpaper, 4000)
+setInterval(trocarWallpaper, 8000)
+
+
+const comoFunciona = document.querySelector('#como-funciona')
+const planos = document.querySelector('#planos')
+
+const pedras = [
+  'assets/pedra1.jpeg',
+  'assets/pedra2.jpeg',
+  'assets/pedra3.jpeg',
+  'assets/pedra4.jpeg',
+  'assets/pedra5.jpeg',
+  'assets/pedra6.jpeg'
+]
+
+let indicePedra = 0
+
+function trocarPedras() {
+  const proximoIndice = (indicePedra + 1) % pedras.length
+
+  const img = new Image()
+  img.src = pedras[proximoIndice]
+
+  function realizarTroca() {
+    comoFunciona.classList.add('transitando')
+    planos.classList.add('transitando')
+
+    setTimeout(function() {
+      indicePedra = proximoIndice
+      comoFunciona.style.backgroundImage = `url('${pedras[indicePedra]}')`
+      comoFunciona.style.backgroundSize = 'cover'
+      comoFunciona.style.backgroundPosition = 'center'
+      planos.style.backgroundImage = `url('${pedras[indicePedra]}')`
+      planos.style.backgroundSize = 'cover'
+      planos.style.backgroundPosition = 'center'
+      comoFunciona.classList.remove('transitando')
+      planos.classList.remove('transitando')
+    }, 500)
+  }
+
+  if (img.complete) {
+    realizarTroca()
+  } else {
+    img.onload = realizarTroca
+  }
+}
+
+comoFunciona.style.backgroundImage = `url('${pedras[0]}')`
+comoFunciona.style.backgroundSize = 'cover'
+comoFunciona.style.backgroundPosition = 'center'
+
+planos.style.backgroundImage = `url('${pedras[0]}')`
+planos.style.backgroundSize = 'cover'
+planos.style.backgroundPosition = 'center'
+
+setInterval(trocarPedras, 8000)

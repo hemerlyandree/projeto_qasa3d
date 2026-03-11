@@ -117,7 +117,7 @@ main {
 }
 
 .vendas-logo {
-  height: 300px;
+  height: 200px;
   width: auto;
   margin-bottom: 24px;
 }
@@ -587,6 +587,25 @@ footer p {
     display: flex;
   }
   
+.vendas-logo {
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.vendas-conteudo h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.vendas-conteudo p {
+  font-size: 1rem;
+}
+
+#vendas {
+  padding: 100px 20px 40px 20px;
+}
+
+
   .menu-toggle {
     display: flex;
     flex-direction: column;
